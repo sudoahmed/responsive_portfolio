@@ -2,12 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:responsive_portfolio_web/constants/constants.dart';
 import 'package:responsive_portfolio_web/provider/themeProvider.dart';
-import 'package:responsive_portfolio_web/sections/portfolio/portfolio_for_desktop.dart';
-import 'package:responsive_portfolio_web/widget/arrow_on_top.dart';
 import 'package:responsive_portfolio_web/widget/custom_text_heading.dart';
-import 'package:responsive_portfolio_web/widget/footer.dart';
 import 'package:responsive_portfolio_web/widget/project_card.dart';
-import 'package:responsive_portfolio_web/widget/service_card.dart';
 
 class DesktopContact extends StatelessWidget {
   const DesktopContact({Key? key}) : super(key: key);
@@ -37,6 +33,7 @@ class DesktopContact extends StatelessWidget {
                 projectIconData: kContactIcons[index],
                 projectTitle: kContactTitles[index],
                 projectDescription: kContactDetails[index],
+                projectLink: kContactLinks[index],
               ),
             ),
           ),

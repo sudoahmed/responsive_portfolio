@@ -8,7 +8,11 @@ import 'package:responsive_portfolio_web/widget/community_icon_button.dart';
 import 'package:responsive_portfolio_web/widget/custom_buttons.dart';
 import 'package:responsive_portfolio_web/widget/custom_text_heading.dart';
 import 'package:responsive_portfolio_web/widget/tool_tech_widget.dart';
-import 'package:universal_html/html.dart';
+
+const introTitle =
+    'I\'m Muhammad Ahmad, a Flutter developer, Software Engineer and technology enthusiast.';
+const String introDescription =
+    'I\'m a 3rd Year Computer Science student enrolled in Sir Syed University, Karachi. I have been developing mobile apps for over 2 years now. I have worked in teams for various startups and helped them in launching their prototypes and got valuable learning experiences. I\'m an active Google Developer Student Clubs (DSC) member and also very enthusiastic to learn generally about Mobile App Development and specifically about Flutter.';
 
 class DesktopAboutSection extends StatelessWidget {
   const DesktopAboutSection({Key? key}) : super(key: key);
@@ -38,7 +42,7 @@ class DesktopAboutSection extends StatelessWidget {
             children: [
               Expanded(
                 child: Image.asset(
-                  "assets/web.png",
+                  "assets/me unedited.jpeg",
                   height: height * 0.7,
                 ),
               ),
@@ -47,8 +51,7 @@ class DesktopAboutSection extends StatelessWidget {
                 child: Column(
                   children: [
                     AdaptiveText(
-                      text:
-                          "I'm Muhammad Ahmad, a Flutter developer, Technical blog writer and UI designer.",
+                      text: introTitle,
                       style: GoogleFonts.montserrat(
                           fontSize: height * 0.035,
                           fontWeight: FontWeight.w400,
@@ -58,8 +61,7 @@ class DesktopAboutSection extends StatelessWidget {
                       height: height * 0.02,
                     ),
                     AdaptiveText(
-                      text:
-                          "I'm a Final Year Computer Science student enrolled in Sir Syed University, Karachi. I have been developing mobile apps for over 1.5 years now. I have worked in teams for various startups and helped them in launching their prototypes and got valuable learning experience. I'm an active Google Developer Student Clubs (DSC) lead and also CEO/Founder Flutter Islamabad, Pakistan.",
+                      text: introDescription,
                       style: GoogleFonts.montserrat(
                           fontSize: height * 0.02,
                           color: Colors.grey[500],
@@ -90,12 +92,30 @@ class DesktopAboutSection extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         AdaptiveText(
-                          text: "Name : Muhammad Ahmad",
+                          text: "Name : Muhammad Ahmad Ansari",
                           style: GoogleFonts.montserrat(
                               height: 0.0018, color: textColor),
                         ),
                         AdaptiveText(
                           text: "Email : sudoahmed2001@gmail.com",
+                          style: GoogleFonts.montserrat(
+                              height: 0.0018, color: textColor),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: height * 0.05,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        AdaptiveText(
+                          text: "Age : 20",
+                          style: GoogleFonts.montserrat(
+                              height: 0.0018, color: textColor),
+                        ),
+                        AdaptiveText(
+                          text: "From : Karachi, PK",
                           style: GoogleFonts.montserrat(
                               height: 0.0018, color: textColor),
                         ),

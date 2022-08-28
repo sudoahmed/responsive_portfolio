@@ -109,11 +109,12 @@ class _HomeDesktopState extends State<HomeDesktop> {
                       TyperAnimatedTextKit(
                         text: const [
                           " Flutter Developer",
+                          " Mobile App Developer",
                           " Technical Writer",
                           " UI/UX Enthusiast"
                         ],
                         isRepeatingAnimation: true,
-                        speed: Duration(milliseconds: 50),
+                        speed: const Duration(milliseconds: 50),
                         textStyle: GoogleFonts.montserrat(
                           fontSize: height * 0.03,
                           fontWeight: FontWeight.w200,

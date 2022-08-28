@@ -22,7 +22,7 @@ class SocialMediaIconsBtn extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: horizontalPadding),
       child: IconButton(
-        onPressed: () => print(_themeProvider.lightTheme),
+        onPressed: () => launchURL(socialLink),
         icon: Image.network(
           icon,
           color: _themeProvider.lightTheme ? Colors.black : Colors.white,

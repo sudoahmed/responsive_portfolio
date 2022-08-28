@@ -11,16 +11,14 @@ const kSocialIcons = [
   "https://img.icons8.com/android/480/ffffff/twitter.png",
   "https://img.icons8.com/metro/308/ffffff/linkedin.png",
   "https://img.icons8.com/material-rounded/384/ffffff/github.png",
-  "https://img.icons8.com/ios-filled/500/ffffff/medium-monogram--v1.png"
 ];
 
 const kSocialLinks = [
-  "https://facebook.com/mhmzdev",
-  "https://instagram.com/mhmzdev",
-  "https://twitter.com/mhmzdev",
-  "https://linkedin.com/in/mhmzdev",
-  "https://github.com/mhmzdev",
-  "https://mhamzadev.medium.com"
+  "https://www.facebook.com/ahmed.ansari.cyberlink",
+  "https://www.instagram.com/ahmed.ansari007/",
+  "https://twitter.com/sudo_ahmed",
+  "https://www.linkedin.com/in/sudoahmed/",
+  "https://github.com/sudoahmed",
 ];
 
 // URL Launcher
@@ -29,43 +27,39 @@ void launchURL(String _url) async =>
 
 // Community
 final kCommunityLogo = [
-  'assets/cui.png',
-  'assets/flutterIsl.png',
+  'assets/SSUET-Logo.png',
+  'assets/FlutterKarachi_logo.png',
   'assets/dsc.png'
 ];
 
 final kCommunityLinks = [
-  "https://www.comsats.edu.pk/",
-  "https://web.facebook.com/FlutterIslamabadPakistan/",
-  "https://dsc.community.dev/comsats-university-islamabad/"
+  "https://www.ssuet.edu.pk/",
+  "https://www.facebook.com/flutterKarachiPakistan",
+  "https://gdsc.community.dev/sir-syed-university-of-engineering-and-technology/"
 ];
 
 // Tools & Tech
 final kTools = [
   "Flutter",
   "Dart",
+  "C#",
+  "Xamarin",
+  "Firebase",
   "Python",
-  "Java",
-  "C++",
-  "HTML",
-  "CSS",
-  "Bootstrap"
+  "Python Dash",
+  "Pandas",
 ];
 
 // services
 final kServicesIcons = [
   "assets/services/app.png",
-  "assets/services/ui.png",
   "assets/services/rapid.png",
-  "assets/services/blog.png",
   "assets/services/open.png",
 ];
 
 final kServicesTitles = [
   "Full App Development",
-  "UI/UX Designing",
   "Rapid Prototyping",
-  "Technical Blog Writing",
   "Open Source - GitHub",
 ];
 
@@ -79,9 +73,9 @@ final kServicesTitles = [
 
 final kServicesDescriptions = [
   "Android app development via Flutter\n- Splash Screen\n- Firebase Auth/Cloud\n- REST APIs\n- Maps integration and more...!",
-  "Modern UI/UX Designing\n- Adobe XD\n- Mobile & Web designs\n- Interactive UI designs\n- Responsiveness\n- Promo Videos and more..!",
+//  "Modern UI/UX Designing\n- Adobe XD\n- Mobile & Web designs\n- Interactive UI designs\n- Responsiveness\n- Promo Videos and more..!",
   "Rapid Prototype via Flutter\n- Working MVP\n- Quick & Working prototype",
-  "Technical Blog writing\n- Medium blogs\n- Soothing header images\n- SEO friendly\n- Researched topics and more..!",
+//  "Technical Blog writing\n- Medium blogs\n- Soothing header images\n- SEO friendly\n- Researched topics and more..!",
   "Open source GitHub Projects\n- Awesome README.md\n- Well documented\n- Header images and more...!",
 ];
 
@@ -151,6 +145,12 @@ final kProjectsLinks = [
   "https://github.com/mhmzdev/FTP_GUI_Java",
   "https://github.com/mhmzdev/My-Order-Resturant-Ordering-System",
   "https://github.com/mhmzdev/Hidev_Web",
+];
+
+final kContactLinks = [
+  'https://www.google.com/maps/place/Karachi,+Karachi+City,+Sindh,+Pakistan/@25.1935599,66.8752741,10z/data=!3m1!4b1!4m5!3m4!1s0x3eb33e06651d4bbf:0x9cf92f44555a0c23!8m2!3d24.8607343!4d67.0011364',
+  'https://wa.me/+923431030381?text=Hi Ahmed!',
+  'http://mailto:sudoahmed2001@gmail.com',
 ];
 
 final List<String> sectionsName = [

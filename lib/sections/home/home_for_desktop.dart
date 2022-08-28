@@ -7,10 +7,7 @@ import 'package:responsive_portfolio_web/animations/entranceFader.dart';
 import 'package:responsive_portfolio_web/constants/constants.dart';
 import 'package:responsive_portfolio_web/provider/themeProvider.dart';
 import 'package:responsive_portfolio_web/widget/adaptive_text.dart';
-import 'package:animated_widgets/animated_widgets.dart';
 import 'package:responsive_portfolio_web/widget/social_media_icon_button.dart';
-import 'package:simple_animations/simple_animations.dart';
-import 'package:universal_html/js.dart';
 
 import '../../custom_package.dart';
 
@@ -43,7 +40,7 @@ class _HomeDesktopState extends State<HomeDesktop> {
               delay: Duration(seconds: 1),
               duration: Duration(milliseconds: 800),
               child: Image.asset(
-                'assets/1.png',
+                'assets/final.png',
                 height: width < 1200 ? height * 0.8 : height * 0.85,
               ),
             ),

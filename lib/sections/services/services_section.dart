@@ -10,7 +10,7 @@ class ServicesSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
-      mobile: const MobileServicesSection(),
+      mobile: const ServiceMobile(),
       desktop: const DesktopServicesSection(),
       tablet: const TabletServicesSection(),
     );

@@ -8,7 +8,6 @@ import 'package:responsive_portfolio_web/provider/themeProvider.dart';
 import 'package:responsive_portfolio_web/sections/services/components/contac_me_dialogue_box.dart';
 
 import 'adaptive_text.dart';
-import 'custom_buttons.dart';
 
 class ServiceCard extends StatefulWidget {
   const ServiceCard(
@@ -16,14 +15,16 @@ class ServiceCard extends StatefulWidget {
       required this.serviceIcon,
       required this.serviceTitle,
       required this.serviceDescription,
-      required this.serviceLink,
+      this.serviceLink,
       required this.cardWidth,
-      required this.cardHeight,
+      this.cardHeight,
       required this.cardBack})
       : super(key: key);
 
-  final String serviceIcon, serviceTitle, serviceDescription, serviceLink;
-  final double cardWidth, cardHeight;
+  final String serviceIcon, serviceTitle, serviceDescription;
+  final String? serviceLink;
+  final double cardWidth;
+  final double? cardHeight;
   final Widget cardBack;
 
   @override
@@ -33,13 +34,26 @@ class ServiceCard extends StatefulWidget {
 class _ServiceCardState extends State<ServiceCard> {
   GlobalKey<FlipCardState> cardKey = GlobalKey<FlipCardState>();
   bool isHover = false;
+  bool isTapped = false;
   @override
   Widget build(BuildContext context) {
     final _themProvider = Provider.of<ThemeProvider>(context);
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        if (isTapped) {
+          setState(() {
+            isHover = true;
+          });
+          cardKey.currentState?.toggleCard();
+        } else {
+          setState(() {
+            isHover = false;
+          });
+          cardKey.currentState?.toggleCard();
+        }
+      },
       onHover: (isHovering) {
         if (isHovering) {
           setState(() {

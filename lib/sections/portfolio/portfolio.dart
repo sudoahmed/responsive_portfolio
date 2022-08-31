@@ -10,8 +10,8 @@ class PortfolioSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
-      mobile: MobilePortfolio(),
-      desktop: DesktopPortfolio(),
+      mobile: const MobilePortfolio(),
+      desktop: const DesktopPortfolio(),
       tablet: TabletPortfolio(),
     );
   }

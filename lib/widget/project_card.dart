@@ -16,7 +16,7 @@ class ProjectCard extends StatefulWidget {
       required this.projectDescription,
       this.projectLink,
       required this.cardWidth,
-      required this.cardHeight,
+      this.cardHeight,
       this.backImage,
       this.bottomWidget})
       : super(key: key);
@@ -26,7 +26,7 @@ class ProjectCard extends StatefulWidget {
   final String projectDescription;
   final String? projectLink;
   final double cardWidth;
-  final double cardHeight;
+  final double? cardHeight;
   final String? backImage;
   final Widget? bottomWidget;
 

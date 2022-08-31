@@ -10,9 +10,9 @@ class ContactSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
-      mobile: MobileContact(),
-      desktop: DesktopContact(),
-      tablet: TabletContact(),
+      mobile: const MobileContact(),
+      desktop: const DesktopContact(),
+      tablet: const TabletContact(),
     );
   }
 }

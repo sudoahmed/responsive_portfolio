@@ -12,7 +12,7 @@ class AboutSection extends StatelessWidget {
     return ScreenTypeLayout(
       mobile: AboutMobile(),
       desktop: const DesktopAboutSection(),
-      tablet: const TabletAboutSection(),
+      tablet: TabletAboutSection(),
     );
   }
 }

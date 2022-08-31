@@ -22,11 +22,11 @@ class TabletHome extends StatelessWidget {
       child: Stack(
         children: [
           Positioned(
-            bottom: width < 740 ? height * 0.1 : height * 0.15,
+            top: width < 740 ? height * 0.1 : height * 0.37,
             right: width < 740 ? -width * 0.2 : -width * 0.1,
             child: Opacity(
               opacity: 0.9,
-              child: Image.asset('assets/1.png', height: height * 0.75),
+              child: Image.asset('assets/final.png', height: height * 0.75),
             ),
           ),
           Container(
@@ -68,7 +68,7 @@ class TabletHome extends StatelessWidget {
                       letterSpacing: 1.5),
                 ),
                 Text(
-                  "Hamza",
+                  "Ahmad",
                   style: GoogleFonts.montserrat(
                     fontSize: height * 0.07,
                     fontWeight: FontWeight.w500,

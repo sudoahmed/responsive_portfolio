@@ -9,9 +9,9 @@ import 'package:responsive_portfolio_web/widget/custom_buttons.dart';
 import 'package:responsive_portfolio_web/widget/custom_text_heading.dart';
 import 'package:responsive_portfolio_web/widget/tool_tech_widget.dart';
 
-const introTitle =
+const kIntroTitle =
     'I\'m Muhammad Ahmad, a Flutter developer, Software Engineer and technology enthusiast.';
-const String introDescription =
+const String kIntroDescription =
     'I\'m a 3rd Year Computer Science student enrolled in Sir Syed University, Karachi. I have been developing mobile apps for over 2 years now. I have worked in teams for various startups and helped them in launching their prototypes and got valuable learning experiences. I\'m an active Google Developer Student Clubs (DSC) member and also very enthusiastic to learn generally about Mobile App Development and specifically about Flutter.';
 
 class DesktopAboutSection extends StatelessWidget {
@@ -51,7 +51,7 @@ class DesktopAboutSection extends StatelessWidget {
                 child: Column(
                   children: [
                     AdaptiveText(
-                      text: introTitle,
+                      text: kIntroTitle,
                       style: GoogleFonts.montserrat(
                           fontSize: height * 0.035,
                           fontWeight: FontWeight.w400,
@@ -61,7 +61,7 @@ class DesktopAboutSection extends StatelessWidget {
                       height: height * 0.02,
                     ),
                     AdaptiveText(
-                      text: introDescription,
+                      text: kIntroDescription,
                       style: GoogleFonts.montserrat(
                           fontSize: height * 0.02,
                           color: Colors.grey[500],

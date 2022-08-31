@@ -157,6 +157,7 @@ class AboutMobile extends StatelessWidget {
           Align(
             alignment: Alignment.centerLeft,
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Padding(
                   padding: const EdgeInsets.all(8.0),
@@ -171,18 +172,18 @@ class AboutMobile extends StatelessWidget {
                         //         'https://drive.google.com/file/d/1FaHIzT9FigDHLx8NlxFIyQfjJTyN9WQ6/view?usp=sharing');
                       }),
                 ),
-                SingleChildScrollView(
-                  scrollDirection: Axis.horizontal,
-                  child: Row(children: [
-                    for (var i = 0; i < kCommunityLogo.length; i++)
-                      CommunityIconBtn(
-                          icon: kCommunityLogo[i],
-                          link: kCommunityLinks[i],
-                          height: _communityLogoHeight[i])
-                  ]),
-                ),
               ],
             ),
+          ),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(children: [
+              for (var i = 0; i < kCommunityLogo.length; i++)
+                CommunityIconBtn(
+                    icon: kCommunityLogo[i],
+                    link: kCommunityLinks[i],
+                    height: _communityLogoHeight[i])
+            ]),
           ),
           Container(
             padding: EdgeInsets.all(8),

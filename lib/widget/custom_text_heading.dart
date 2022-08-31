@@ -15,7 +15,7 @@ class CustomSectionHeading extends StatelessWidget {
     return AdaptiveText(
       text: text,
       style: GoogleFonts.montserrat(
-        fontSize: MediaQuery.of(context).size.height * 0.075,
+        fontSize: MediaQuery.of(context).size.height * 0.070,
         fontWeight: FontWeight.w100,
         letterSpacing: 1.0,
         color: _themeProvider.lightTheme ? Colors.black : Colors.white,

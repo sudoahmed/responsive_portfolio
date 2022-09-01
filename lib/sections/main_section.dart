@@ -115,8 +115,7 @@ class MainPageState extends State<MainPage> {
     final themeProv = Provider.of<ThemeProvider>(context);
     return Scaffold(
       extendBodyBehindAppBar: true,
-      backgroundColor: Colors.purple,
-      //backgroundColor: themeProv.lightTheme ? Colors.white : Colors.black,
+      backgroundColor: themeProv.lightTheme ? Colors.white : Colors.black,
       appBar: MediaQuery.of(context).size.width < 760
           ? AppBar(
               iconTheme: IconThemeData(

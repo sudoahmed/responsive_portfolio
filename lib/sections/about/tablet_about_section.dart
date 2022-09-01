@@ -35,7 +35,7 @@ class TabletAboutSection extends StatelessWidget {
             height: 15,
           ),
           Image.asset(
-            'assets/meMobile.png',
+            'assets/meMob.png',
             height: height * 0.3,
           ),
           SizedBox(

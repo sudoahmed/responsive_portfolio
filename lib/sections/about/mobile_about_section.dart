@@ -37,7 +37,7 @@ class AboutMobile extends StatelessWidget {
             height: 10,
           ),
           Image.asset(
-            'assets/meMobile.png',
+            'assets/meMob.png',
             height: height * 0.27,
           ),
           SizedBox(

@@ -26,7 +26,8 @@ class TabletHome extends StatelessWidget {
             right: width < 740 ? -width * 0.2 : -width * 0.1,
             child: Opacity(
               opacity: 0.9,
-              child: Image.asset('assets/ahmed.png', height: height * 0.75),
+              child:
+                  Image.asset('assets/me_cut_BnW.png', height: height * 0.75),
             ),
           ),
           Container(

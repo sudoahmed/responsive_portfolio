@@ -42,7 +42,7 @@ class DesktopAboutSection extends StatelessWidget {
             children: [
               Expanded(
                 child: Image.asset(
-                  "assets/me unedited.jpeg",
+                  "assets/me2.png",
                   height: height * 0.7,
                 ),
               ),

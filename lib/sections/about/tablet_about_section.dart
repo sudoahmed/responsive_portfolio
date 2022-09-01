@@ -1,7 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:provider/provider.dart';
 import 'package:responsive_portfolio_web/sections/about/desktop_about_section.dart';
-import 'package:universal_html/html.dart' as html;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../constants/constants.dart';
@@ -138,7 +137,7 @@ class TabletAboutSection extends StatelessWidget {
               // SizedBox(
               //   width: width > 710 ? width * 0.2 : width * 0.05,
               // ),
-              SizedBox(
+              const SizedBox(
                 width: 15,
               ),
               Column(
@@ -159,35 +158,31 @@ class TabletAboutSection extends StatelessWidget {
           SizedBox(
             height: height * 0.02,
           ),
-          Row(
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: OutlinedCustomBtn(
-                    btnText: "Resume",
-                    onPressed: () {
-                      //TODO: RESUME Google drive will be here
-                      //   kIsWeb
-                      //       ? html.window.open(
-                      //       'https://drive.google.com/file/d/1FaHIzT9FigDHLx8NlxFIyQfjJTyN9WQ6/view?usp=sharing',
-                      //       "pdf")
-                      //       : launchURL(
-                      //       'https://drive.google.com/file/d/1FaHIzT9FigDHLx8NlxFIyQfjJTyN9WQ6/view?usp=sharing');
-                    }),
-              ),
-              Container(
-                margin: EdgeInsets.all(10),
-                width: width * 0.7,
-                decoration: BoxDecoration(
-                  border: Border(
-                    bottom: BorderSide(
-                      color: Colors.grey[900]!,
-                      width: 2.0,
-                    ),
-                  ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: OutlinedCustomBtn(
+                btnText: "Resume",
+                onPressed: () {
+                  //TODO: RESUME Google drive will be here
+                  //   kIsWeb
+                  //       ? html.window.open(
+                  //       'https://drive.google.com/file/d/1FaHIzT9FigDHLx8NlxFIyQfjJTyN9WQ6/view?usp=sharing',
+                  //       "pdf")
+                  //       : launchURL(
+                  //       'https://drive.google.com/file/d/1FaHIzT9FigDHLx8NlxFIyQfjJTyN9WQ6/view?usp=sharing');
+                }),
+          ),
+          Container(
+            margin: const EdgeInsets.all(10),
+            width: width * 0.7,
+            decoration: BoxDecoration(
+              border: Border(
+                bottom: BorderSide(
+                  color: Colors.grey[900]!,
+                  width: 2.0,
                 ),
               ),
-            ],
+            ),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,

@@ -28,7 +28,7 @@ class HomeMobile extends StatelessWidget {
               child: Opacity(
                 opacity: 0.9,
                 child: Image.asset(
-                  "assets/final.png",
+                  "assets/ahmed.png",
                   height: height * 0.65,
                 ),
               ),

@@ -8,6 +8,7 @@ import 'package:responsive_portfolio_web/widget/community_icon_button.dart';
 import 'package:responsive_portfolio_web/widget/custom_buttons.dart';
 import 'package:responsive_portfolio_web/widget/custom_text_heading.dart';
 import 'package:responsive_portfolio_web/widget/tool_tech_widget.dart';
+import 'package:universal_html/html.dart' as html;
 
 const kIntroTitle =
     'I\'m Muhammad Ahmad, a Flutter developer, Software Engineer and technology enthusiast.';
@@ -127,7 +128,12 @@ class DesktopAboutSection extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        OutlinedCustomBtn(btnText: "RESUME", onPressed: () {}),
+                        OutlinedCustomBtn(
+                          btnText: "RESUME",
+                          onPressed: () => html.window.open(
+                              'https://drive.google.com/file/d/1m3GSQ9qJpLKTFP5cdrObFDPaBZSgSEev/view?usp=sharing',
+                              'pdf'),
+                        ),
                         Container(
                           width: width * 0.05,
                           decoration: const BoxDecoration(
